@@ -31,4 +31,4 @@ Informacije o številu uporabnikov niso navedene.
 
 - Št. razvijalcev: 1 (Dmitri Livotov)
 - Datum zadnjega popravka: 1.2.2016
-- Najnovejša verzija: 2.0.2
+- Najnovejša verzija: 2.0.1
