@@ -30,5 +30,5 @@ Informacije o številu uporabnikov niso navedene.
 ## Vzdrževanje projekta
 
 - Št. razvijalcev: 1 (Dmitri Livotov)
-- Datum zadnjega popravka: 11.12.2020
+- Datum zadnjega popravka: 1.2.2016
 - Najnovejša verzija: 2.0.2
