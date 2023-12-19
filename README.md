@@ -10,7 +10,9 @@ V knjižnico so vključeni naslednji diagrami: črtni grafi, linijski grafi in k
 ### Prednosti:
 
 Zelo lahka in intuitivna uporaba knjižnice. Prikaz preprostih grafov.
-Deluje samo z vklučitvijo: implementation("org.quanqi:android-holo-graph:0.1.0") v dependency v gradle.
+- Deluje samo z vklučitvijo:
+- implementation("org.quanqi:android-holo-graph:0.1.0") 
+- v dependency v gradle.
 
 ### Slabosti:
 
