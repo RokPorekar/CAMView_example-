@@ -26,8 +26,10 @@ Informacije o številu uporabnikov niso navedene.
 ### Stolpični diagram
 <img src="bar1.jpg" width="200" alt="Example Image"/>
 <img src="bar2.jpg" width="200" alt="Example Image"/>
+
 ### Črtni diagram
 <img src="line1.jpg" width="200" alt="Example Image"/>
 <img src="line2.jpg" width="200" alt="Example Image"/>
+
 ### Tortni diagram
 <img src="pie1.jpg" width="200" alt="Example Image"/>
