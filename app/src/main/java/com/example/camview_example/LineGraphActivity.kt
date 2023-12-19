@@ -1,18 +1,15 @@
 package com.example.camview_example
 
-import android.R
 import android.graphics.Color
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.echo.holographlibrary.Line
-import com.echo.holographlibrary.LineGraph
 import com.echo.holographlibrary.LinePoint
 import com.example.camview_example.databinding.ActivityLineGraphBinding
 
 
 class LineGraphActivity : AppCompatActivity() {
-    lateinit var binding: ActivityLineGraphBinding
+    private lateinit var binding: ActivityLineGraphBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLineGraphBinding.inflate(layoutInflater)
@@ -40,6 +37,6 @@ class LineGraphActivity : AppCompatActivity() {
         val li = binding.graph
         li.addLine(l)
         li.setRangeY(0f, 10f)
-        li.lineToFill = 0
+        li.lineToFill = 1
     }
 }

@@ -2,9 +2,11 @@ package com.example.camview_example
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.echo.holographlibrary.PieSlice
 import com.example.camview_example.databinding.ActivityPieGraphBinding
+import java.util.Random
 
 
 class PieGraphActivity : AppCompatActivity() {
@@ -31,5 +33,28 @@ class PieGraphActivity : AppCompatActivity() {
         slice.color = Color.parseColor("#AA66CC")
         slice.value = 8f
         pg.addSlice(slice)
+    }
+
+    fun graph(view: View) {
+        val pg = binding.graph
+        var slice = PieSlice()
+        slice.color = getRandomColor()
+        slice.value = binding.editTextValue1.text.toString().toFloat()
+        pg.addSlice(slice)
+        slice = PieSlice()
+        slice.color = getRandomColor()
+        slice.value = binding.editTextValue2.text.toString().toFloat()
+        pg.addSlice(slice)
+        slice = PieSlice()
+        slice.color = getRandomColor()
+        slice.value = binding.editTextValue3.text.toString().toFloat()
+        pg.addSlice(slice)
+    }
+    private fun getRandomColor(): Int {
+        val random = Random()
+        val red = random.nextInt(256)
+        val green = random.nextInt(256)
+        val blue = random.nextInt(256)
+        return Color.rgb(red, green, blue)
     }
 }
