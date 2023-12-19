@@ -9,9 +9,12 @@ V knjižnico so vključeni naslednji diagrami: črtni grafi, linijski grafi in k
 
 ### Prednosti:
 
+Zelo lahka in intuitivna uporaba knjižnice. Prikaz preprostih grafov.
+Deluje samo z vklučitvijo: implementation("org.quanqi:android-holo-graph:0.1.0") v dependency v gradle.
 
 ### Slabosti:
 
+Slaba podprtost projekta, zadnji popravek 30.10.2017. Na grafe ne moramo dodajati osi, grafi niso primerni za bolj znanstven prikaz podatkov. 
 
 ## Licenca
 
@@ -24,6 +27,9 @@ Informacije o številu uporabnikov niso navedene.
 ## Vzdrževanje projekta
 
 Verzija: 0.1.0
+Glavni razvijalci: Daniel Nadeau, Louis Teboul
+Število razvijalcev: 34
+Zadnji popravek:  30.10.2017
 
 ## Posnetki zaslona aplikacije
 ### Stolpični diagram
