@@ -26,10 +26,10 @@ Informacije o številu uporabnikov niso navedene.
 
 ## Vzdrževanje projekta
 
-Verzija: 0.1.0
-Glavni razvijalci: Daniel Nadeau, Louis Teboul
-Število razvijalcev: 34
-Zadnji popravek:  30.10.2017
+- Verzija: 0.1.0
+- Glavni razvijalci: Daniel Nadeau, Louis Teboul
+- Število razvijalcev: 34
+- Zadnji popravek:  30.10.2017
 
 ## Posnetki zaslona aplikacije
 ### Stolpični diagram
