@@ -24,10 +24,10 @@ Informacije o številu uporabnikov niso navedene.
 
 ## Posnetki zaslona aplikacije
 ### Stolpični diagram
-![Example Image](bar1.jpg)
-![Example Image](bar2.jpg)
+<img src="bar1.jpg" width="200" alt="Example Image"/>
+<img src="bar2.jpg" width="200" alt="Example Image"/>
 ### Črtni diagram
-![Example Image](line1.jpg)
-![Example Image](line2.jpg)
+<img src="line1.jpg" width="200" alt="Example Image"/>
+<img src="line2.jpg" width="200" alt="Example Image"/>
 ### Tortni diagram
-![Example Image](pie1.jpg)
+<img src="pie1.jpg" width="200" alt="Example Image"/>
