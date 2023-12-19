@@ -19,7 +19,7 @@
         android:id="@+id/textViewValue1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First value:"
+        android:text="@string/pie_first_value"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextValue1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:id="@+id/textViewValue2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second value:"
+        android:text="@string/pie_second_value"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextValue2"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="191dp" />
@@ -55,7 +55,7 @@
         android:id="@+id/textViewValue3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Third value:"
+        android:text="@string/pie_third_value"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextValue3"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="54dp" />
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="graph"
-        android:text="Show graph"
+        android:text="@string/show_graph"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

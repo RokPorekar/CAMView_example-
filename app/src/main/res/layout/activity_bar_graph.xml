@@ -19,7 +19,7 @@
         android:id="@+id/textViewBarName1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name of first bar:"
+        android:text="@string/name_of_first_bar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextBarName1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:id="@+id/textViewBarName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name of second bar:"
+        android:text="@string/name_of_second_bar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextBarName2"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="191dp" />
@@ -55,7 +55,7 @@
         android:id="@+id/textViewBarValue1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Value of first bar:"
+        android:text="@string/value_of_first_bar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextBarValue1"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="54dp" />
@@ -64,7 +64,7 @@
         android:id="@+id/textViewBarValue2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Value of second bar:"
+        android:text="@string/value_of_second_bar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextBarValue2"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="147dp" />
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="graph"
-        android:text="Show graph"
+        android:text="@string/show_graph"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

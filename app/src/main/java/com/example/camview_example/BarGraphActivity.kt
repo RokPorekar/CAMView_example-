@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.echo.holographlibrary.Bar
 import com.example.camview_example.databinding.ActivityBarGraphBinding
+import com.google.android.material.snackbar.Snackbar
 
 
 class BarGraphActivity : AppCompatActivity() {
@@ -36,6 +37,10 @@ class BarGraphActivity : AppCompatActivity() {
     }
 
     fun graph(view: View) {
+        if(binding.editTextBarName1.text.isBlank() || binding.editTextBarValue1.text.isBlank() || binding.editTextBarName2.text.isBlank() || binding.editTextBarValue2.text.isBlank()){
+            Snackbar.make(binding.root, "Please fill in all fields", Snackbar.LENGTH_SHORT).show()
+            return
+        }
         val points = ArrayList<Bar>()
         val d = Bar()
         d.color = Color.parseColor("#99CC00")
@@ -50,5 +55,8 @@ class BarGraphActivity : AppCompatActivity() {
 
         val g = binding.graph
         g.bars = points
+        g.setShowAxis(false)
+        g.setShowAxisLabel(false)
+        g.setShowBarText(false)
     }
 }

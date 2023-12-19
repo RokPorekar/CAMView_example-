@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">HoloGraph Library</string>
+    <string name="appTitle">Holo Graph Library example</string>
+    <string name="buttonLineGraph">LineGraph</string>
+    <string name="buttonBarGraph">BarGraph</string>
+    <string name="ButtonPieGraph">PieGraph</string>
+    <string name="pie_first_value">First value:</string>
+    <string name="pie_second_value">Second value:</string>
+    <string name="pie_third_value">Third value:</string>
+    <string name="show_graph">Show graph</string>
+    <string name="name_of_first_bar">Name of first bar:</string>
+    <string name="name_of_second_bar">Name of second bar:</string>
+    <string name="value_of_first_bar">Value of first bar:</string>
+    <string name="value_of_second_bar">Value of second bar:</string>
+    <string name="x_coordinates">X coordinates:</string>
+    <string name="y_coordinates">Y coordinates:</string>
+    <string name="add_point">Add point</string>
 </resources>

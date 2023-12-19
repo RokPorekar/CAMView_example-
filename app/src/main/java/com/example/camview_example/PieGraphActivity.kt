@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.echo.holographlibrary.PieSlice
 import com.example.camview_example.databinding.ActivityPieGraphBinding
+import com.google.android.material.snackbar.Snackbar
 import java.util.Random
 
 
@@ -36,7 +37,12 @@ class PieGraphActivity : AppCompatActivity() {
     }
 
     fun graph(view: View) {
+        if(binding.editTextValue1.text.isBlank() || binding.editTextValue2.text.isBlank() || binding.editTextValue3.text.isBlank()){
+            Snackbar.make(binding.root, "Please fill in all fields", Snackbar.LENGTH_SHORT).show()
+            return
+        }
         val pg = binding.graph
+        pg.removeSlices()
         var slice = PieSlice()
         slice.color = getRandomColor()
         slice.value = binding.editTextValue1.text.toString().toFloat()
@@ -49,6 +55,7 @@ class PieGraphActivity : AppCompatActivity() {
         slice.color = getRandomColor()
         slice.value = binding.editTextValue3.text.toString().toFloat()
         pg.addSlice(slice)
+        pg.setInnerCircleRatio(40)
     }
     private fun getRandomColor(): Int {
         val random = Random()
