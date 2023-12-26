@@ -10,7 +10,7 @@ V knjižnico so vključeni naslednji diagrami: črtni grafi, linijski grafi in k
 ### Prednosti:
 
 Zelo lahka in intuitivna uporaba knjižnice. Prikaz preprostih grafov. Deluje samo z vklučitvijo:
-- implementation("org.quanqi:android-holo-graph:0.1.0")
+-     implementation("org.quanqi:android-holo-graph:0.1.0")
 
 ### Slabosti:
 
@@ -35,10 +35,40 @@ Informacije o številu uporabnikov niso navedene.
 ### Stolpični diagram
 <img src="bar1.jpg" width="200" alt="Example Image"/>
 <img src="bar2.jpg" width="200" alt="Example Image"/>
+V activity.xml dodamo:
+
+    <com.echo.holographlibrary.BarGraph
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
 ### Črtni diagram
 <img src="line1.jpg" width="200" alt="Example Image"/>
 <img src="line2.jpg" width="200" alt="Example Image"/>
+V activity.xml dodamo:
+
+        <com.echo.holographlibrary.LineGraph
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
 ### Tortni diagram
 <img src="pie1.jpg" width="200" alt="Example Image"/>
+V activity.xml dodamo:
+
+      <com.echo.holographlibrary.PieGraph
+          android:id="@+id/graph"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/guideline3" />
