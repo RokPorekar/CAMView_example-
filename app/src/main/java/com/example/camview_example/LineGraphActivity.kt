@@ -12,12 +12,23 @@ import com.google.android.material.snackbar.Snackbar
 
 class LineGraphActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLineGraphBinding
+    private var clickedPoint: LinePoint? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLineGraphBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
         graph()
+        binding.graph.setOnPointClickedListener { lineIndex, pointIndex ->
+            val line = binding.graph.lines[lineIndex]
+            clickedPoint = line.points[pointIndex]
+            // Display the values (you can replace this with your preferred way of displaying values)
+            Snackbar.make(
+                binding.root,
+                "Clicked Point: x=${clickedPoint?.getX()}, y=${clickedPoint?.getY()}",
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
     }
     private fun graph(){
 
@@ -59,8 +70,11 @@ class LineGraphActivity : AppCompatActivity() {
         l.strokeWidth = 20
         val li = binding.graph
         li.addLine(l)
-        li.setRangeY(0f, binding.editTextY.text.toString().toFloat()+4)
+        li.setRangeY(0f, binding.editTextY.text.toString().toFloat() + 4)
         li.lineToFill = -1
-        li.setRangeX(0f,binding.editTextX.text.toString().toFloat()+4)
+        li.setRangeX(0f, binding.editTextX.text.toString().toFloat() + 4)
+
+        // Reset clicked point
+        clickedPoint = null
     }
 }

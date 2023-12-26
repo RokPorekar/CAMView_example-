@@ -3,6 +3,7 @@ package com.example.camview_example
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.echo.holographlibrary.Bar
 import com.example.camview_example.databinding.ActivityBarGraphBinding
@@ -17,6 +18,12 @@ class BarGraphActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         graph()
+        binding.graph.setOnBarClickedListener { index ->
+            val selectedBar = binding.graph.bars[index]
+            val value = selectedBar.valueString
+            Toast.makeText(this@BarGraphActivity, "Clicked Bar Value: $value", Toast.LENGTH_SHORT)
+                .show()
+        }
     }
     private fun graph(){
 
