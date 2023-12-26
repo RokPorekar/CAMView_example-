@@ -63,7 +63,11 @@ class BarGraphActivity : AppCompatActivity() {
         val g = binding.graph
         g.bars = points
         g.setShowAxis(false)
-        g.setShowAxisLabel(false)
+        g.setShowAxisLabel(true)
         g.setShowBarText(false)
+        binding.editTextBarName1.text.clear()
+        binding.editTextBarName2.text.clear()
+        binding.editTextBarValue1.text.clear()
+        binding.editTextBarValue2.text.clear()
     }
 }

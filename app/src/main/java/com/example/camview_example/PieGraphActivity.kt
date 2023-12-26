@@ -79,6 +79,9 @@ class PieGraphActivity : AppCompatActivity() {
         pg.addSlice(slice)
 
         pg.setInnerCircleRatio(40)
+        binding.editTextValue1.text.clear()
+        binding.editTextValue2.text.clear()
+        binding.editTextValue3.text.clear()
     }
 
     private fun getRandomColor(): Int {

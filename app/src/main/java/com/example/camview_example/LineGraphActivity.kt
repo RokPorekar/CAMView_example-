@@ -76,5 +76,7 @@ class LineGraphActivity : AppCompatActivity() {
 
         // Reset clicked point
         clickedPoint = null
+        binding.editTextX.text.clear()
+        binding.editTextY.text.clear()
     }
 }
