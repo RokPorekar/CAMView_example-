@@ -3,7 +3,7 @@
 ## Zakaj HoloGraph Library?
 Knjižnica Holo Graph Library je znana odprtokodna grafična knjižnica, ki se uporablja v androidnih aplikacijah za ustvarjanje grafov in diagramov za uporabnike.
 Ta temelji na slogu Holo sistema Android in je združljiv z vsemi sodobnimi in standardno skladnimi aplikacijami.
-V knjižnico so vključeni naslednji diagrami: črtni grafi, linijski grafi in krožni diagrami.
+V knjižnico so vključeni naslednji diagrami: črtni grafi, stolpični grafi in krožni diagrami.
 
 ## Prednosti/slabosti
 
@@ -18,7 +18,7 @@ Slaba podprtost projekta, zadnji popravek 30.10.2017. Na grafe ne moramo dodajat
 
 ## Licenca
 
-Uporablja se licenca The Apache Software License, Version 2.0, ki omogoča uporabo v različnih projektih.
+Uporablja se licenca The Apache Software License, Version 2.0
 
 ## Št. uporabnikov
 
