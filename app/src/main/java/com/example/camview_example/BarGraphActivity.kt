@@ -53,10 +53,12 @@ class BarGraphActivity : AppCompatActivity() {
         d.color = Color.parseColor("#99CC00")
         d.name = binding.editTextBarName1.text.toString()
         d.value = binding.editTextBarValue1.text.toString().toFloat()
+        d.labelColor = Color.parseColor("#FFBB33")
         val d2 = Bar()
         d2.color = Color.parseColor("#FFBB33")
         d2.name = binding.editTextBarName2.text.toString()
         d2.value = binding.editTextBarValue2.text.toString().toFloat()
+        d2.labelColor = Color.parseColor("#99CC00")
         points.add(d)
         points.add(d2)
 

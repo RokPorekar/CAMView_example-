@@ -44,11 +44,13 @@ class PieGraphActivity : AppCompatActivity() {
         pg.setOnSliceClickedListener { index ->
             val clickedSlice = pg.getSlice(index)
             val sliceValue = clickedSlice.value
+            val sliceTitle = clickedSlice.title
+
 
             // Display the value using a Toast
             Toast.makeText(
                 this@PieGraphActivity,
-                "Slice $index clicked. Value: $sliceValue",
+                "Slice $index clicked. Value: $sliceValue, Title: $sliceTitle",
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -66,19 +68,23 @@ class PieGraphActivity : AppCompatActivity() {
         var slice = PieSlice()
         slice.color = getRandomColor()
         slice.value = binding.editTextValue1.text.toString().toFloat()
+        slice.title = "First number"
         pg.addSlice(slice)
 
         slice = PieSlice()
         slice.color = getRandomColor()
         slice.value = binding.editTextValue2.text.toString().toFloat()
+        slice.title = "Second number"
         pg.addSlice(slice)
 
         slice = PieSlice()
         slice.color = getRandomColor()
         slice.value = binding.editTextValue3.text.toString().toFloat()
+        slice.title = "Third number"
         pg.addSlice(slice)
 
         pg.setInnerCircleRatio(40)
+        //pg.setPadding(80)
         binding.editTextValue1.text.clear()
         binding.editTextValue2.text.clear()
         binding.editTextValue3.text.clear()

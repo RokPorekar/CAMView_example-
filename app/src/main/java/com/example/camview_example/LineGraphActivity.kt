@@ -36,6 +36,7 @@ class LineGraphActivity : AppCompatActivity() {
         var p = LinePoint()
         p.x = 0f
         p.y = 5f
+        //p.color = Color.parseColor("#FFFFFF")
         l.addPoint(p)
         p = LinePoint()
         p.x = 8f
@@ -50,12 +51,18 @@ class LineGraphActivity : AppCompatActivity() {
         p.y = 5f
         l.addPoint(p)
         l.color = Color.parseColor("#FFBB33")
+        //l.isShowingPoints = false
+
 
         val li = binding.graph
         li.addLine(l)
         li.setRangeY(0f, 10f)
         li.lineToFill = 0
         li.setRangeX(0f,50f)
+
+        li.addPointToLine(0, 0.5, 1.0)
+        li.addPointToLine(0, 1.0, 2.0)
+        li.addPointToLine(0, 2.0, 3.0)
     }
     fun addPoint(view: View) {
         if(binding.editTextX.text.isBlank() || binding.editTextY.text.isBlank()){
@@ -73,6 +80,11 @@ class LineGraphActivity : AppCompatActivity() {
         li.setRangeY(0f, binding.editTextY.text.toString().toFloat() + 4)
         li.lineToFill = -1
         li.setRangeX(0f, binding.editTextX.text.toString().toFloat() + 4)
+        li.addPointToLine(0, 20.3, 8.5)
+
+        li.removeAllPointsAfter(0,24.0)
+        li.removeAllPointsBefore(0,0.6)
+        li.removeAllPointsBetween(0,8.0,10.0)
 
         // Reset clicked point
         clickedPoint = null
