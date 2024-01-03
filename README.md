@@ -18,7 +18,7 @@ Slaba podprtost projekta, zadnji popravek 30.10.2017. Na grafe ne moramo dodajat
 
 ## Licenca
 
-Uporablja se licenca The Apache Software License, Version 2.0, ki omogoča uporabo v različnih projektih.
+Uporablja se licenca The Apache Software License, Version 2.0
 
 ## Št. uporabnikov
 
