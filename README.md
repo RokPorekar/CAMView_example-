@@ -31,6 +31,10 @@ Informacije o številu uporabnikov niso navedene.
 - Število razvijalcev: 34
 - Zadnji popravek:  30.10.2017
 
+## Link do Holograph Library repozitorija
+
+https://github.com/Androguide/HoloGraphLibrary
+
 ## Uporaba v xml
 ### Stolpični diagram
         
